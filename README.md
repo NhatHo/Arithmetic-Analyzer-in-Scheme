@@ -1,10 +1,10 @@
 # Arithmetic-Analyzer-in-Scheme
 
 ## Description: 
-A simple Arithmetic Analyzer machine in Scheme which displays data +, -, *, / operations on numerical values. 
+A simple Arithmetic Analyzer coded in Scheme which displays data +, -, *, / operations on numerical values. 
 As well as catching syntax errors when invalid string is entered.
 
-How to run the program:
+## How to run the program:
 You will need a Scheme compiler to run this program, suggested compiler is DrRacket.
 When click on Run, DrRacket will open a console prompting  user input:
 
@@ -119,3 +119,8 @@ that is not "register-x" or a number in <constant> case.
 ## Improvements:
 The error catching can be improved to show the location of the error in original input string.
 The program can be modified to implement stacks to parse expression and catch errors earlier during execution instead of runtime. This will improve performance greately when a big arithmetic opertaion is used.
+
+## TO MAKE THIS PURELY FUNCTIONAL PROGRAM
+Comment out `(define result "") ;The result variable which contains the compilation phrases` line.
+And replace all `(set! result "")` with print to console command. This way, the result is not stored and it is printed out everytime the function is called during recursion.
+The purpose of `result` was just to make the output looks better in case of error while parsing.
